@@ -661,44 +661,21 @@ txt2.place(x=250, y=250)
 AP = tk.Button(window, text="Check Register students",command=admin_panel,fg="black"  ,bg="cyan"  ,width=19 ,height=1, activebackground = "Red" ,font=('times', 15, ' bold '))
 AP.place(x=990, y=410)
 
-# take_image_icon = Image.open("Imagine a man dressed in business attire.jpg")
-# take_image_icon = ImageTk.PhotoImage(take_image_icon)
 
-# # Button to take images with icon
-# takeImg = tk.Button(window, text="Take Images", command=take_img, fg="white", bg="blue2", width=120, height=200, activebackground="Red", font=('times', 15, ' bold '), compound=tk.LEFT, image=take_image_icon)
-# takeImg.place(x=90, y=400)
-# icon_image = Image.open("a face man with strong character.jpg")
-# icon_photo = ImageTk.PhotoImage(icon_image)
-
-# # Button to take images with icon
-# takeImg = tk.Button(window, text="", command=take_img, fg="white", bg="blue2", width=120, height=180, activebackground="Red", font=('times', 15, ' bold '), image=icon_photo)
-# takeImg.place(x=90, y=500)
 icon_image = Image.open("OIP2.jpg")
 icon_photo = ImageTk.PhotoImage(icon_image)
 takeImg = tk.Button(window, text="Take Image", command=take_img, fg="white", bg="blue2", width=120, height=180, activebackground="Red", font=('times', 15, ' bold '), image=icon_photo, compound=tk.LEFT, padx=20)
 takeImg.place(x=120, y=500)
 
-
-# trainImg = tk.Button(window, text="i",fg="black",command=trainimg ,bg="lawn green"  ,width=20  ,height=3, activebackground = "Red" ,font=('times', 15, ' bold '))
-# trainImg.place(x=390, y=500)
-
-#train
 train_icon = Image.open("Imagine a man dressed in business attire.jpg")
 train_icon_photo = ImageTk.PhotoImage(train_icon)
 trainImg = tk.Button(window, text="", fg="black", command=trainimg, bg="lawn green", width=120, height=180, activebackground="Red", font=('times', 15, ' bold '), image=train_icon_photo, compound=tk.CENTER)
 trainImg.place(x=390, y=500)
-
-#automatic attendence
-# FA = tk.Button(window, text="Automatic Attendace",fg="white",command=subjectchoose  ,bg="blue2"  ,width=20  ,height=3, activebackground = "Red" ,font=('times', 15, ' bold '))
-# FA.place(x=690, y=500)
 icon_image_FA = Image.open("Telpo-TPS980-face-recognition-machine.jpg")
 icon_photo_FA = ImageTk.PhotoImage(icon_image_FA)
 FA = tk.Button(window, text="", fg="white", command=subjectchoose, bg="blue2", width=120, height=180, activebackground="Red", font=('times', 15, ' bold '), image=icon_photo_FA, compound=tk.LEFT, padx=20)
 FA.place(x=690, y=500)
 
-#Manually Fill Attendance
-# quitWindow = tk.Button(window, text="Manually Fill Attendance", command=manually_fill  ,fg="black"  ,bg="lawn green"  ,width=20  ,height=3, activebackground = "Red" ,font=('times', 15, ' bold '))
-# quitWindow.place(x=990, y=500)
 icon_image_quitWindow = Image.open("trending on artstation.jpg")
 icon_photo_quitWindow = ImageTk.PhotoImage(icon_image_quitWindow)
 quitWindow = tk.Button(window, text="", command=manually_fill, fg="black", bg="lawn green", width=120, height=180, activebackground="Red", font=('times', 15, ' bold '), image=icon_photo_quitWindow, compound=tk.LEFT, padx=20)
