@@ -21,7 +21,7 @@ while True:
         cv2.rectangle(im, (x, y), (x + w, y + h), (0, 260, 0), 7)
         cv2.putText(im, str(Id), (x,y-40),font, 2, (255,255,255), 3)
 
-        # cv2.putText(im, str(Id), (x + h, y), font, 1, (0, 260, 0), 2)
+       
     cv2.imshow('im',im)
     if cv2.waitKey(10) & 0xFF==ord('q'):
         break
