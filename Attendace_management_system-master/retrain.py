@@ -180,13 +180,7 @@ def create_image_lists(image_dir, testing_percentage, validation_percentage):
       # this is used in the plant disease data set to group multiple pictures of
       # the same leaf.
       hash_name = re.sub(r'_nohash_.*$', '', file_name)
-      # This looks a bit magical, but we need to decide whether this file should
-      # go into the training, testing, or validation sets, and we want to keep
-      # existing files in the same set even if more files are subsequently
-      # added.
-      # To do that, we need a stable way of deciding based on just the file name
-      # itself, so we do a hash of that and then use that to generate a
-      # probability value that we use to assign it.
+      
       hash_name_hashed = hashlib.sha1(compat.as_bytes(hash_name)).hexdigest()
       percentage_hash = ((int(hash_name_hashed, 16) %
                           (MAX_NUM_IMAGES_PER_CLASS + 1)) *
